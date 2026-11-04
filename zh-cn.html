@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="张航宁，杭州电子科技大学自动化专业本科生。研究兴趣包括计算机视觉、雷达感知、机器人学习与医学图像分析。">
+  <meta name="theme-color" content="#18588e">
+  <title>张航宁 | 个人学术主页</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="alternate" hreflang="en" href="./index.html">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至正文</a>
+  <header class="topbar">
+    <div class="top-inner">
+      <a class="brand" href="#about" aria-label="张航宁的学术主页"><span class="monogram" aria-hidden="true">HZ</span><span>个人学术主页</span></a>
+      <div class="top-right"><span class="location">中国 · 杭州</span><a class="lang-button" href="./index.html" lang="en" hreflang="en" aria-label="查看英文版">English</a></div>
+    </div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar" aria-label="个人信息与导航">
+      <div class="identity-mark" aria-hidden="true">HZ</div>
+      <div class="sidebar-identity"><p class="sidebar-name">张航宁</p><p class="sidebar-chinese" lang="en">Hangning Zhang</p></div>
+      <p class="sidebar-info"><span>自动化专业本科生</span><br><span>杭州电子科技大学</span><br><span>中国 · 杭州</span></p>
+      <div class="sidebar-links">
+        <a href="mailto:24061733@hdu.edu.cn"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="m3 5 7 6 7-6"/></svg><span>邮箱</span></a>
+        <a href="https://github.com/zhang-hn-1" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 17v-3c-4 1-4-2-5-2m11 5v-3c0-1-.4-1.6-1-2 3-.3 5-1.5 5-5 0-1-.4-2-1-2.5.2-.7.2-1.5-.2-2.5-1.5 0-2.5.7-3 1a12 12 0 0 0-5.6 0c-.5-.3-1.5-1-3-1-.4 1-.4 1.8-.2 2.5C3.4 5 3 6 3 7c0 3.5 2 4.7 5 5-.6.4-1 1-1 2"/></svg>GitHub</a>
+      </div>
+      <nav class="side-nav" aria-label="页面目录">
+        <a href="#about" aria-current="location">个人简介</a>
+        <a href="#research">研究与项目</a>
+        <a href="#publications">论文进展</a>
+        <a href="#education">教育背景</a>
+        <a href="#honors">荣誉奖项</a>
+        <a href="#service">服务与技能</a>
+        <a href="#contact">联系我</a>
+      </nav>
+      <p class="sidebar-foot">感知 · 学习 · 控制</p>
+    </aside>
+    <main id="main">
+      <section id="about" class="hero" aria-labelledby="name">
+        <p class="eyebrow">杭州电子科技大学 · 自动化</p>
+        <h1 id="name">张航宁 <span class="latin-name" lang="en">Hangning Zhang</span></h1>
+        <p class="subtitle">自动化专业本科生 · 2024—2028（预计）</p>
+        <p class="intro">你好！我是张航宁，现就读于杭州电子科技大学自动化专业。我的研究兴趣包括计算机视觉、雷达感知与机器人学习，希望通过感知与学习方法，让智能系统更好地理解环境并完成控制任务。</p>
+        <p class="intro">目前的研究与项目经历涵盖低空雷达目标识别、多模态医学图像分析和球形机器人强化学习。我也曾担任全国大学生智能汽车竞赛团队的视觉负责人，参与嵌入式视觉感知与车辆控制系统开发，团队获得全国一等奖。</p>
+        <p class="interest-label">研究兴趣</p>
+        <div class="interests"><span>计算机视觉</span><span>雷达感知</span><span>机器人学习</span><span>医学图像分析</span></div>
+      </section>
+
+      <section id="research" class="content-section" aria-labelledby="research-heading">
+        <h2 id="research-heading"><span class="section-index" aria-hidden="true">01</span><span>研究与项目</span></h2>
+        <article class="project">
+          <div class="project-top"><h3>L-RDTNet：低空雷达目标识别</h3><span class="number" aria-hidden="true">R.01</span></div>
+          <p class="project-meta">指导教师：涂海程副教授 · 雷达感知 / 边缘智能</p>
+          <p>基于距离–多普勒–时间（R-D-T）结构化表征，研究低空目标识别方法，关注弱回波、杂波干扰及相似运动模式下的分类问题。完成与手工特征、CNN、3D CNN 和 Transformer 类基线的对比及消融实验，并在 Jetson 平台进行推理验证。</p>
+          <p class="result">项目实验：准确率 95.06% · Macro-F1 95.04% · 8.37M 参数 · Jetson 103.41 FPS</p>
+          <div class="tags"><span>雷达感知</span><span>R-D-T</span><span>PyTorch</span><span>Jetson</span></div>
+        </article>
+        <article class="project">
+          <div class="project-top"><h3>多模态深度学习：白睛眼像与颈动脉斑块</h3><span class="number" aria-hidden="true">R.02</span></div>
+          <p class="project-meta">指导教师：曹九稳教授 · 医学图像分析</p>
+          <p>探索利用非侵入式白睛眼像预测颈动脉斑块风险，参与从数据预处理到模型架构改进的完整流程。通过多组消融实验评估模型模块，研究眼部特征与颈动脉斑块之间的潜在关联。</p>
+          <div class="tags"><span>多模态学习</span><span>医学影像</span><span>PyTorch</span></div>
+        </article>
+        <article class="project">
+          <div class="project-top"><h3>球形机器人导航与 PPO 端到端训练</h3><span class="number" aria-hidden="true">R.03</span></div>
+          <p class="project-meta">浙江大学科研实习项目 · 指导教师：王酉教授</p>
+          <p>基于 Isaac Gym 搭建并行物理仿真环境，完成球体动力学建模、力矩控制和点到点闭环导航基线。设计强化学习观测空间、奖励函数、成功判定和独立复位逻辑，完成 MLP 策略的 PPO 端到端初步训练，验证训练与推理流程。</p>
+          <p class="result">仿真规模：4 个并行环境 × 每环境 27 个球体</p>
+          <div class="tags"><span>Isaac Gym</span><span>PPO</span><span>强化学习</span></div>
+        </article>
+        <article class="project">
+          <div class="project-top"><h3>智能汽车：嵌入式视觉与自主控制</h3><span class="number" aria-hidden="true">R.04</span></div>
+          <p class="project-meta">视觉负责人 · 指导教师：余善恩老师</p>
+          <p>设计并部署基于嵌入式平台的高速自动驾驶视觉感知系统，参与复杂赛道识别与车辆控制。团队获得全国大学生智能汽车竞赛全国一等奖。</p>
+          <div class="tags"><span>OpenCV</span><span>C/C++</span><span>PID</span><span>嵌入式视觉</span></div>
+        </article>
+      </section>
+
+      <section id="publications" class="content-section" aria-labelledby="publications-heading">
+        <h2 id="publications-heading"><span class="section-index" aria-hidden="true">02</span><span>论文进展</span></h2>
+        <p class="section-note">以下为尚未发表的研究工作。完整题录及公开链接将在可用时更新。</p>
+        <article class="paper"><h3>L-RDTNet 低空雷达目标识别研究</h3><p><span class="status">在投</span><span>IEEE Transactions on Industrial Informatics</span></p></article>
+        <article class="paper"><h3>基于多模态深度学习的白睛眼像与颈动脉斑块相关性研究</h3><p><span class="status">研究进行中</span><span>医学图像分析</span></p></article>
+      </section>
+
+      <section id="education" class="content-section" aria-labelledby="education-heading">
+        <h2 id="education-heading"><span class="section-index" aria-hidden="true">03</span><span>教育背景</span></h2>
+        <div class="education"><div class="education-top"><h3><a href="https://www.hdu.edu.cn/" target="_blank" rel="noopener noreferrer">杭州电子科技大学</a></h3><span class="date">2024.09—2028.06（预计）</span></div><p>自动化 · 本科</p><p class="gpa">平均绩点：4.51 / 5.00</p><p>相关课程：C 语言程序设计、Python、自动控制原理。</p></div>
+      </section>
+
+      <section id="honors" class="content-section" aria-labelledby="honors-heading">
+        <h2 id="honors-heading"><span class="section-index" aria-hidden="true">04</span><span>荣誉奖项</span></h2>
+        <ul class="honors">
+          <li><span>全国一等奖 · 全国大学生智能汽车竞赛</span></li>
+          <li><span>浙江省二等奖 · 浙江省大学生数学建模竞赛</span></li>
+          <li><span>省级二等奖 · 大学生计算机设计大赛</span></li>
+          <li><span>国家级大学生创新训练项目负责人</span></li>
+          <li><span>省政府奖学金（1 次） · 校级一等奖学金（3 次）</span></li>
+          <li><span>校级三好学生 · 自动化学院优秀共青团员（2025）</span></li>
+        </ul>
+      </section>
+
+      <section id="service" class="content-section" aria-labelledby="service-heading">
+        <h2 id="service-heading"><span class="section-index" aria-hidden="true">05</span><span>服务与技能</span></h2>
+        <div class="service"><p>数学建模协会副会长：协助组织校级数学建模赛事，参与赛事沟通、报名与支持工作。</p><p>自动化六班团支书：组织班级与支部活动，参与领英计划“守正班”。</p></div>
+        <div class="skills"><div><strong>编程语言：</strong>C / C++ · Python</div><div><strong>方法与工具：</strong>PyTorch · OpenCV · YOLO · ResNet · GNN · PID</div><div><strong>认证：</strong><span>华为 HCIA-AI-Solution 工程师认证</span></div></div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-heading"><h2 id="contact-heading">联系我</h2><p>欢迎就研究兴趣、项目与学术交流联系我。</p><a href="mailto:24061733@hdu.edu.cn">24061733@hdu.edu.cn</a><span aria-hidden="true"> &nbsp;·&nbsp; </span><a href="https://github.com/zhang-hn-1" target="_blank" rel="noopener noreferrer">GitHub ↗</a></section>
+    </main>
+  </div>
+  <footer class="footer"><span>© 2026 张航宁 · <span lang="en">Hangning Zhang</span></span><span><span>学术主页</span> &nbsp; / &nbsp; <a href="#about">返回顶部 ↑</a></span></footer>
+</body>
+</html>
