@@ -1,22 +1,26 @@
 'use strict';
 
-// Each language has a complete static HTML page; no storage or script is needed to select it.
-// Keep the contents navigation aligned with the section being read.
-if ('IntersectionObserver' in window) {
-  const links = [...document.querySelectorAll('.side-nav a')];
-  const sections = links.map(link => document.querySelector(link.getAttribute('href')));
-  const visibleSections = new Set();
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) visibleSections.add(entry.target.id);
-      else visibleSections.delete(entry.target.id);
-    });
-    const active = sections.find(section => visibleSections.has(section.id));
-    if (!active) return;
-    links.forEach(link => {
-      if (link.getAttribute('href') === `#${active.id}`) link.setAttribute('aria-current', 'location');
-      else link.removeAttribute('aria-current');
-    });
-  }, { rootMargin: '-8% 0px -45% 0px', threshold: 0 });
-  sections.forEach(section => observer.observe(section));
+// Preserve bookmarks from the former single-page site after splitting sections.
+function followLegacyFragment() {
+  let id;
+  try { id = decodeURIComponent(window.location.hash.slice(1)); }
+  catch { return; }
+  if (!id || document.getElementById(id)) return;
+  let page;
+  if (id === 'publications' || id.startsWith('paper-')) page = 'publications';
+  else if (id === 'research' || id.startsWith('project-')) page = 'projects';
+  else if (['innovation', 'patents', 'education'].includes(id)) page = 'experience';
+  else if (id === 'honors') page = 'awards';
+  else if (['service', 'contact'].includes(id)) page = 'services';
+  else if (['about', 'interests', 'news', 'name'].includes(id)) page = 'home';
+  else return;
+  const chinese = document.documentElement.lang === 'zh-CN';
+  const file = page === 'home' ? (chinese ? 'zh-cn.html' : 'index.html')
+    : `${page}${chinese ? '-zh' : ''}.html`;
+  if (page !== document.body.dataset.page) {
+    window.location.replace(`./${file}#${encodeURIComponent(id)}`);
+  }
 }
+followLegacyFragment();
+window.addEventListener('hashchange', followLegacyFragment);
+window.addEventListener('pageshow', followLegacyFragment);

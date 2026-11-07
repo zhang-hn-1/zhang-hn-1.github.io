@@ -1,6 +1,6 @@
 # 张航宁 / Hangning Zhang — Academic Homepage
 
-白底蓝色链接、零依赖的个人学术主页，包含独立英文版 `index.html` 和独立简体中文版 `zh-cn.html`。点击右上角语言链接切换版本；两种语言均无需 JavaScript 即可完整显示。无需安装依赖或构建。
+参考 caihanlin.com 的简洁学术排版：横向导航、学校与联系信息侧栏、手写感字体及宽留白。包含六个栏目和中英文各六个静态页面，正文无需 JavaScript 即可阅读。原单页章节链接由 main.js 兼容跳转。无需安装依赖或构建。
 
 ## 本地查看
 
@@ -10,7 +10,7 @@
 
 目标仓库：https://github.com/zhang-hn-1/zhang-hn-1.github.io
 
-1. 解压交付的 ZIP，将 `index.html`、`zh-cn.html`、`styles.css`、`main.js`、`favicon.svg`、`.nojekyll` 和 `README.md` 放在仓库根目录。ZIP 不应作为单个文件上传。
+1. 解压交付的 ZIP，将全部 HTML、styles.css、main.js、favicon.svg、.nojekyll、README.md 及 assets 文件夹放在仓库根目录。请保留 assets 中的字体与许可证文件。ZIP 不应作为单个文件上传。
 2. 在仓库页面选择 **Add file → Upload files**，上传并提交到 `main`。如果空仓库没有 Add file，可点 **uploading an existing file**。
 3. 打开 **Settings → Pages → Build and deployment**，Source 选择 **Deploy from a branch**，Branch 选择 **main**，目录选择 **/(root)**，点击 Save。
 4. 等待 Pages 部署成功，以 Settings → Pages 中显示的最终地址为准。
@@ -21,12 +21,21 @@
 
 简体中文版地址为 `https://zhang-hn-1.github.io/zh-cn.html`。所有本地资源均使用相对路径。
 
-## 修改内容
+## 页面与资源
 
-- `index.html`：英文版；`zh-cn.html`：独立简体中文版。更新内容时请同步修改两个文件；英文页面保留的 `data-zh` 为初始中文文案参考，不会自动覆盖独立中文版。
-- `styles.css`：配色、字体、桌面和手机布局。
-- `main.js`：随滚动更新目录状态。语言切换通过两个静态网页之间的链接完成，不依赖浏览器语言偏好。
-- `favicon.svg`：姓名缩写图标。
+| 栏目 | 英文版 | 简体中文版 |
+| --- | --- | --- |
+| 主页 | index.html | zh-cn.html |
+| 论文 | publications.html | publications-zh.html |
+| 项目 | projects.html | projects-zh.html |
+| 经历与专利 | experience.html | experience-zh.html |
+| 荣誉 | awards.html | awards-zh.html |
+| 服务与技能 | services.html | services-zh.html |
+
+- 修改正文时请同步对应的两种语言页面。
+- styles.css 控制排版；main.js 兼容旧版单页的章节书签。
+- 字体为 LXGW WenKai 的本站字符子集，内部名称 Academic Script Subset，采用 SIL Open Font License 1.1。原作者项目：https://github.com/lxgw/LxgwWenKai；许可证见 assets/OFL-WenKai.txt。子集仅覆盖当前页面字符，添加新字时可重新生成子集，或由系统楷体回退显示。
+- 视觉参考：https://caihanlin.com/。未使用参考站的个人照片、机构图标、个人介绍或研究内容。
 
 ## 本次内容更新（2026-11-07）
 
