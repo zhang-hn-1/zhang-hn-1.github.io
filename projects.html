@@ -31,36 +31,6 @@
   <main id="main"><h1 class="page-title">Research &amp; Engineering Projects</h1>
 <section id="research" class="content-section">
 
-      <article class="project" id="project-radar"><div class="project-top">
-      <h3>Radar perception &amp; edge deployment</h3></div><p class="project-meta">L-RDTNet · Measurement submission</p><p class="">Develop radar-specific representations rather than treating every range–Doppler frame as an independent natural image. Investigate clutter, similar motion patterns and weak returns through structured R-D-T learning.</p>
-      <details><summary>Approach & work</summary><p class="">Work spans representation design, conventional and deep-learning baselines, ablations, degradation tests and edge inference. The current manuscript evaluates RK3588 clip-level deployment; platform-specific measurements are kept separate from earlier prototypes.</p></details>
-<div class="tags"><span>R-D-T</span><span>PyTorch</span><span>RK3588</span></div><a class="project-link" href="./publications.html#paper-measurement">Related manuscript ↗</a></article>
-
-      <article class="project" id="project-ocular"><div class="project-top">
-      <h3>Ocular imaging for auxiliary vascular screening</h3></div><p class="project-meta">ARGL-Net · CMIG submission · granted invention patent</p><p class="">Explore whether readily acquired ocular surface images contain cues associated with carotid plaque. My work covers preprocessing, model architecture improvements and experimental analysis.</p>
-      <details><summary>Approach & work</summary><p class="">Combine global appearance and local texture with attention refinement and gated fusion. Examine subject-level results, module contributions and sensitivity to image perturbations; treat the model as research on auxiliary screening.</p></details>
-<div class="tags"><span>Medical imaging</span><span>Global–local learning</span><span>Attention</span></div><a class="project-link" href="./publications.html#paper-cmig">Related manuscript ↗</a></article>
-
-      <article class="project" id="project-restoration"><div class="project-top">
-      <h3>Task-aware UAV image restoration</h3></div><p class="project-meta">AnchorIR · JMI submission</p><p class="">Study restoration for power-line inspection where visually similar fittings must still be matched to their correct clean reference after degradation.</p>
-      <details><summary>Approach & work</summary><p class="">Use training-only source anchoring and degradation supervision; compare reconstruction and competitive retrieval rather than inferring retrieval quality from PSNR alone.</p></details>
-<div class="tags"><span>Image restoration</span><span>Source retrieval</span><span>Lightweight models</span></div><a class="project-link" href="./publications.html#paper-jmi">Related manuscript ↗</a></article>
-
-      <article class="project" id="project-agents"><div class="project-top">
-      <h3>Evidence-grounded agricultural diagnosis</h3></div><p class="project-meta">CAS-DC · PRCV submission</p><p class="">Connect visual perception to structured reasoning: classify leaves, locate lesions, extract symptoms and retrieve supporting and contrasting evidence before forming management suggestions.</p>
-      <details><summary>Approach & work</summary><p class="">A shared-blackboard workflow separates triage, evidence analysis, differential diagnosis, environmental/input-risk assessment, planning and safety review. Perception quality and report safety are evaluated as different outcomes.</p></details>
-<div class="tags"><span>DINOv3</span><span>Qwen3-VL</span><span>RAG</span><span>Multi-agent</span></div><a class="project-link" href="./publications.html#paper-prcv">Related manuscript ↗</a></article>
-
-      <article class="project" id="project-smart-meter"><div class="project-top">
-      <h3>Privacy-aware and reliable smart-meter analytics</h3></div><p class="project-meta">PA-LPF / FC-PAR · collaborative research</p><p class="">Study two complementary problems: screening flexible demand-side resources from privacy-perturbed profiles, and recovering measurement records after stealthy corruption.</p>
-      <details><summary>Approach & work</summary><p class="">PA-LPF fuses perturbed embeddings with daily aggregate descriptors. FC-PAR uses chronology-constrained references and localization-guided repair. Evaluation considers privacy–utility, temporal boundaries and downstream forecast recovery.</p></details>
-<div class="tags"><span>Load profiles</span><span>Privacy–utility</span><span>Selective reconstruction</span></div><a class="project-link" href="./publications.html#paper-trel">Related manuscript ↗</a></article>
-
-      <article class="project" id="project-uav"><div class="project-top">
-      <h3>Robust small-vehicle detection in UAV imagery</h3></div><p class="project-meta">YOLO12 · first-author ICIBA acceptance</p><p class="">Investigate sensitivity to small bounding-box shifts and computational redundancy in aerial vehicle detection. The accepted work combines NWD regression with a focused C3Ghost modification.</p>
-      <details><summary>Approach & work</summary><p class="">Experimental tooling compares detection metrics with parameter count, computation and latency on EVD4UAV, making the accuracy–efficiency trade-off explicit.</p></details>
-<div class="tags"><span>YOLO12</span><span>NWD</span><span>C3Ghost</span></div><a class="project-link" href="./publications.html#paper-iciba">Related manuscript ↗</a></article>
-
       <article class="project" id="project-robot"><div class="project-top">
       <h3>Spherical robot simulation &amp; PPO navigation</h3></div><p class="project-meta">Zhejiang University research internship project · advisor: You Wang</p><p class="">Build torque-driven spherical dynamics and a point-to-point closed-loop navigation baseline in Isaac Gym, supporting four parallel environments with 27 spheres per environment.</p>
       <details><summary>Approach & work</summary><p class="">Implement observations, rewards, success criteria and independent resets. Complete initial end-to-end PPO training with an MLP policy and connect training to inference as a baseline for subsequent policy comparisons.</p></details>
