@@ -28,90 +28,140 @@
         <a href="mailto:24061733@hdu.edu.cn"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="m3 5 7 6 7-6"/></svg><span>邮箱</span></a>
         <a href="https://github.com/zhang-hn-1" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 17v-3c-4 1-4-2-5-2m11 5v-3c0-1-.4-1.6-1-2 3-.3 5-1.5 5-5 0-1-.4-2-1-2.5.2-.7.2-1.5-.2-2.5-1.5 0-2.5.7-3 1a12 12 0 0 0-5.6 0c-.5-.3-1.5-1-3-1-.4 1-.4 1.8-.2 2.5C3.4 5 3 6 3 7c0 3.5 2 4.7 5 5-.6.4-1 1-1 2"/></svg>GitHub</a>
       </div>
-      <nav class="side-nav" aria-label="页面目录">
-        <a href="#about" aria-current="location">个人简介</a>
-        <a href="#research">研究与项目</a>
-        <a href="#publications">论文进展</a>
-        <a href="#education">教育背景</a>
-        <a href="#honors">荣誉奖项</a>
-        <a href="#service">服务与技能</a>
-        <a href="#contact">联系我</a>
-      </nav>
+      <nav class="side-nav" aria-label="页面目录"><a href="#about">个人简介</a><a href="#publications">论文与投稿</a><a href="#research">研究与项目</a><a href="#innovation">创新项目</a><a href="#patents">专利</a><a href="#education">教育背景</a><a href="#honors">荣誉与竞赛</a><a href="#service">服务与技能</a><a href="#contact">联系我</a></nav>
       <p class="sidebar-foot">感知 · 学习 · 控制</p>
     </aside>
     <main id="main">
-      <section id="about" class="hero" aria-labelledby="name">
-        <p class="eyebrow">杭州电子科技大学 · 自动化</p>
-        <h1 id="name">张航宁 <span class="latin-name" lang="en">Hangning Zhang</span></h1>
-        <p class="subtitle">自动化专业本科生 · 2024—2028（预计）</p>
-        <p class="intro">你好！我是张航宁，现就读于杭州电子科技大学自动化专业。我的研究兴趣包括计算机视觉、雷达感知与机器人学习，希望通过感知与学习方法，让智能系统更好地理解环境并完成控制任务。</p>
-        <p class="intro">目前的研究与项目经历涵盖低空雷达目标识别、多模态医学图像分析和球形机器人强化学习。我也曾担任全国大学生智能汽车竞赛团队的视觉负责人，参与嵌入式视觉感知与车辆控制系统开发，团队获得全国一等奖。</p>
-        <p class="interest-label">研究兴趣</p>
-        <div class="interests"><span>计算机视觉</span><span>雷达感知</span><span>机器人学习</span><span>医学图像分析</span></div>
-      </section>
+      <section id="about" class="hero"><p class="eyebrow">杭州电子科技大学 · 自动化</p><h1 id="name">张航宁 <span class="latin-name" lang="en">Hangning Zhang</span></h1><p class="subtitle">自动化专业本科生 · 2024—2028（预计）</p><p class="intro">你好！我是张航宁，杭州电子科技大学自动化专业本科生。我的研究围绕视觉感知、结构化表征学习与智能决策展开，涉及医学图像分析、无人机巡检、低空雷达感知、农业病害诊断及机器人学习。</p><p class="intro">我担任两项国家级大学生创新训练项目负责人，曾作为视觉负责人参与获得全国一等奖的智能汽车团队。我关注从算法、实验到系统实现的完整过程，希望将模型性能、证据可追溯性、鲁棒性与实际部署成本结合起来。</p><div class="snapshot"><div><strong>2</strong><span>录用论文</span></div><div><strong>5</strong><span>在投论文</span></div><div><strong>2</strong><span>主持国家级大创</span></div><div><strong>1</strong><span>授权发明专利</span></div></div><div class="interests"><span>视觉感知</span><span>医学影像</span><span>多智能体推理</span><span>机器人学习</span><span>可靠感知</span></div><p class="updated">更新于 2026 年 11 月 7 日</p></section>
 
-      <section id="research" class="content-section" aria-labelledby="research-heading">
-        <h2 id="research-heading"><span class="section-index" aria-hidden="true">01</span><span>研究与项目</span></h2>
-        <article class="project">
-          <div class="project-top"><h3>L-RDTNet：低空雷达目标识别</h3><span class="number" aria-hidden="true">R.01</span></div>
-          <p class="project-meta">指导教师：涂海程副教授 · 雷达感知 / 边缘智能</p>
-          <p>基于距离–多普勒–时间（R-D-T）结构化表征，研究低空目标识别方法，关注弱回波、杂波干扰及相似运动模式下的分类问题。完成与手工特征、CNN、3D CNN 和 Transformer 类基线的对比及消融实验，并在 Jetson 平台进行推理验证。</p>
-          <p class="result">项目实验：准确率 95.06% · Macro-F1 95.04% · 8.37M 参数 · Jetson 103.41 FPS</p>
-          <div class="tags"><span>雷达感知</span><span>R-D-T</span><span>PyTorch</span><span>Jetson</span></div>
-        </article>
-        <article class="project">
-          <div class="project-top"><h3>多模态深度学习：白睛眼像与颈动脉斑块</h3><span class="number" aria-hidden="true">R.02</span></div>
-          <p class="project-meta">指导教师：曹九稳教授 · 医学图像分析</p>
-          <p>探索利用非侵入式白睛眼像预测颈动脉斑块风险，参与从数据预处理到模型架构改进的完整流程。通过多组消融实验评估模型模块，研究眼部特征与颈动脉斑块之间的潜在关联。</p>
-          <div class="tags"><span>多模态学习</span><span>医学影像</span><span>PyTorch</span></div>
-        </article>
-        <article class="project">
-          <div class="project-top"><h3>球形机器人导航与 PPO 端到端训练</h3><span class="number" aria-hidden="true">R.03</span></div>
-          <p class="project-meta">浙江大学科研实习项目 · 指导教师：王酉教授</p>
-          <p>基于 Isaac Gym 搭建并行物理仿真环境，完成球体动力学建模、力矩控制和点到点闭环导航基线。设计强化学习观测空间、奖励函数、成功判定和独立复位逻辑，完成 MLP 策略的 PPO 端到端初步训练，验证训练与推理流程。</p>
-          <p class="result">仿真规模：4 个并行环境 × 每环境 27 个球体</p>
-          <div class="tags"><span>Isaac Gym</span><span>PPO</span><span>强化学习</span></div>
-        </article>
-        <article class="project">
-          <div class="project-top"><h3>智能汽车：嵌入式视觉与自主控制</h3><span class="number" aria-hidden="true">R.04</span></div>
-          <p class="project-meta">视觉负责人 · 指导教师：余善恩老师</p>
-          <p>设计并部署基于嵌入式平台的高速自动驾驶视觉感知系统，参与复杂赛道识别与车辆控制。团队获得全国大学生智能汽车竞赛全国一等奖。</p>
-          <div class="tags"><span>OpenCV</span><span>C/C++</span><span>PID</span><span>嵌入式视觉</span></div>
-        </article>
-      </section>
+      <section id="publications" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">01</span>论文与投稿</h2><p class="section-note">已录用论文与在投研究。展开各条目可查看研究方法与实验细节。</p>
+      <h3 class="group-heading">已录用论文</h3>
+      <article class="paper expanded-paper" id="paper-iciba" data-status="accepted"><div class="paper-labels"><span class="status accepted">录用</span><span class="author-role">第一作者</span></div>
+      <h3 lang="en">Robust and Lightweight YOLO12-Based Framework for Small Vehicle Detection</h3><p class="paper-translation">面向小车辆检测的鲁棒轻量化 YOLO12 框架</p><p class="authors"><strong>Hangning Zhang</strong>, Yingjun Guan, Haicheng Tu</p><p class="venue">ICIBA 2026</p><p class="paper-summary">面向无人机视角下的小车辆检测，将小目标定位鲁棒性与骨干网络轻量化结合，研究复杂背景、遮挡和尺度变化下检测精度与部署开销的平衡。</p>
+      <details><summary>方法与实验细节</summary><p class="">在边界框回归中引入归一化 Wasserstein 距离（NWD），降低小目标对像素级位置偏移的敏感性；以 C3Ghost 替换骨干深层 A2C2f 模块，减少冗余计算。围绕 EVD4UAV 数据集比较检测效果、参数量、计算量与推理时延。已被 ICIBA 2026 录用。</p></details>
+</article>
 
-      <section id="publications" class="content-section" aria-labelledby="publications-heading">
-        <h2 id="publications-heading"><span class="section-index" aria-hidden="true">02</span><span>论文进展</span></h2>
-        <p class="section-note">以下为尚未发表的研究工作。完整题录及公开链接将在可用时更新。</p>
-        <article class="paper"><h3>L-RDTNet 低空雷达目标识别研究</h3><p><span class="status">在投</span><span>IEEE Transactions on Industrial Informatics</span></p></article>
-        <article class="paper"><h3>基于多模态深度学习的白睛眼像与颈动脉斑块相关性研究</h3><p><span class="status">研究进行中</span><span>医学图像分析</span></p></article>
-      </section>
+      <article class="paper expanded-paper" id="paper-itoec" data-status="accepted"><div class="paper-labels"><span class="status accepted">录用</span><span class="author-role">第三作者</span></div>
+      <h3 lang="en">Weakly Supervised Privacy-Aware Load Profile Matching for Flexible Resource Screening in Smart Grids</h3><p class="paper-translation">智能电网柔性资源筛选的弱监督隐私感知负荷曲线匹配</p><p class="authors">Mingyue Zhang, Haicheng Tu, <strong>Hangning Zhang</strong>, Yibo Zhu, Xinghua Zhou</p><p class="venue">ITOEC 2026</p><p class="paper-summary">提出 PA-LPF，将扰动后的负荷形状嵌入与日用电聚合描述符融合，面向智能电网需求侧柔性资源的隐私感知预筛选。</p>
+      <details><summary>方法与实验细节</summary><p class="">在严格的无标签规则验证协议下，稿件报告约 0.927 AUC、0.812 F1；通过隐私预算变化、时间片遮蔽和跨群体评估，分析聚合描述符的补充作用与隐私—效用权衡。已被 ITOEC 2026 录用。</p></details>
+</article>
 
-      <section id="education" class="content-section" aria-labelledby="education-heading">
-        <h2 id="education-heading"><span class="section-index" aria-hidden="true">03</span><span>教育背景</span></h2>
-        <div class="education"><div class="education-top"><h3><a href="https://www.hdu.edu.cn/" target="_blank" rel="noopener noreferrer">杭州电子科技大学</a></h3><span class="date">2024.09—2028.06（预计）</span></div><p>自动化 · 本科</p><p class="gpa">平均绩点：4.51 / 5.00</p><p>相关课程：C 语言程序设计、Python、自动控制原理。</p></div>
-      </section>
+      <h3 class="group-heading">在投论文</h3>
+      <article class="paper expanded-paper" id="paper-prcv" data-status="submitted"><div class="paper-labels"><span class="status submitted">在投</span><span class="author-role">第二作者</span></div>
+      <h3 lang="en">CAS-DC: Evidence-Grounded Multimodal Multi-Agent Diagnosis and Safe Report Generation for Tomato Leaf Disease</h3><p class="paper-translation">CAS-DC：证据支撑的番茄叶病多模态多智能体诊断与安全报告生成</p><p class="venue">PRCV</p><p class="paper-summary">将图像与可选田间信息转化为结构化症状和可追溯证据，通过多智能体开展鉴别诊断、风险评估与报告安全审校。</p>
+      <details><summary>方法与实验细节</summary><p class="">融合 DINOv3 分类与分割、Qwen3-VL 症状抽取、知识/病例/反例检索及共享黑板协作，覆盖田间分诊、证据分析、鉴别诊断、管理规划和安全复核。稿件中的分类模型准确率为 97.65%、Macro-F1 为 97.83%；分类指标与报告安全性评价分别讨论。</p></details>
+</article>
 
-      <section id="honors" class="content-section" aria-labelledby="honors-heading">
-        <h2 id="honors-heading"><span class="section-index" aria-hidden="true">04</span><span>荣誉奖项</span></h2>
-        <ul class="honors">
-          <li><span>全国一等奖 · 全国大学生智能汽车竞赛</span></li>
-          <li><span>浙江省二等奖 · 浙江省大学生数学建模竞赛</span></li>
-          <li><span>省级二等奖 · 大学生计算机设计大赛</span></li>
-          <li><span>国家级大学生创新训练项目负责人</span></li>
-          <li><span>省政府奖学金（1 次） · 校级一等奖学金（3 次）</span></li>
-          <li><span>校级三好学生 · 自动化学院优秀共青团员（2025）</span></li>
-        </ul>
-      </section>
+      <article class="paper expanded-paper" id="paper-cmig" data-status="submitted"><div class="paper-labels"><span class="status submitted">在投</span><span class="author-role">第一作者</span></div>
+      <h3 lang="en">Context-Preserved Attention-Refined Global–Local Learning for Ocular Surface Image-Based Carotid Plaque Screening</h3><p class="paper-translation">保留上下文的注意力精炼全局—局部学习：基于眼表图像的颈动脉斑块筛查</p><p class="authors"><strong>Hangning Zhang</strong>, Dinghan Hu, Shichen Zhang, Le Luo, Jiuwen Cao</p><p class="venue">Computerized Medical Imaging and Graphics (CMIG)</p><p class="paper-summary">ARGL-Net 围绕超声定义的颈动脉斑块标签，联合建模完整眼表图像的全局上下文与局部细节，探索非侵入式图像中的血管风险相关线索。</p>
+      <details><summary>方法与实验细节</summary><p class="">研究包含 44,375 张左眼图像，采用受试者级评估；由 ResNet 全局分支、轻量局部细节分支、注意力精炼与门控融合组成模型。稿件报告 AUC 80.74%、Macro-F1 78.50%、准确率 80.00%，并开展对比、消融、扰动与可视化分析。研究仍需外部验证，不作为已验证的临床诊断工具。</p></details>
+</article>
 
-      <section id="service" class="content-section" aria-labelledby="service-heading">
-        <h2 id="service-heading"><span class="section-index" aria-hidden="true">05</span><span>服务与技能</span></h2>
-        <div class="service"><p>数学建模协会副会长：协助组织校级数学建模赛事，参与赛事沟通、报名与支持工作。</p><p>自动化六班团支书：组织班级与支部活动，参与领英计划“守正班”。</p></div>
-        <div class="skills"><div><strong>编程语言：</strong>C / C++ · Python</div><div><strong>方法与工具：</strong>PyTorch · OpenCV · YOLO · ResNet · GNN · PID</div><div><strong>认证：</strong><span>华为 HCIA-AI-Solution 工程师认证</span></div></div>
-      </section>
+      <article class="paper expanded-paper" id="paper-measurement" data-status="submitted"><div class="paper-labels"><span class="status submitted">在投</span><span class="author-role">第一作者</span></div>
+      <h3 lang="en">Edge-Deployable Range-Doppler-Time Learning for Industrial Low-Altitude Radar Target Recognition</h3><p class="paper-translation">面向工业低空雷达目标识别的边缘可部署距离—多普勒—时间学习</p><p class="venue">Measurement</p><p class="paper-summary">L-RDTNet 面向杂波干扰、弱目标回波与信号退化，从连续距离—多普勒图中学习具有雷达物理结构的时空表征。</p>
+      <details><summary>方法与实验细节</summary><p class="">模型逐级编码粗粒度能量响应、局部距离—多普勒纹理、短时运动模式与紧凑目标级特征；与传统方法、CNN、3D CNN 和 Transformer 类模型比较，考察信噪比下降、弱目标衰减和耦合退化，并在 RK3588 上验证片段级推理。</p></details>
+</article>
 
-      <section id="contact" class="contact" aria-labelledby="contact-heading"><h2 id="contact-heading">联系我</h2><p>欢迎就研究兴趣、项目与学术交流联系我。</p><a href="mailto:24061733@hdu.edu.cn">24061733@hdu.edu.cn</a><span aria-hidden="true"> &nbsp;·&nbsp; </span><a href="https://github.com/zhang-hn-1" target="_blank" rel="noopener noreferrer">GitHub ↗</a></section>
-    </main>
+      <article class="paper expanded-paper" id="paper-trel" data-status="submitted"><div class="paper-labels"><span class="status submitted">在投</span><span class="author-role">总第三作者 · 学生第二作者</span></div>
+      <h3 lang="en">Chronology-Constrained Reference-Guided Reconstruction of Stealthily Corrupted Smart-Meter Measurements</h3><p class="paper-translation">时序约束与参考引导的智能电表隐蔽受损测量重建</p><p class="authors">Mingyue Zhang, Haicheng Tu, <strong>Hangning Zhang</strong>, Zhiyuan Hu, Yuyuan Li, Yongxiang Xia, Xi Chen</p><p class="venue">TREL</p><p class="paper-summary">FC-PAR 将区间级异常定位与选择性重建结合，修复智能电表中隐蔽受损的测量记录，同时限制对正常区间的不必要改动。</p>
+      <details><summary>方法与实验细节</summary><p class="">仅从同一家庭符合时间边界的历史记录构建均值、历史注意力及相似日参考，利用定位概率门控加性修正，并通过保持目标限制正常测量漂移。在 Low Carbon London 数据集上评估定位、重建与下游预测恢复，不使用预知异常掩码或未来信息。</p></details>
+</article>
+
+      <article class="paper expanded-paper" id="paper-jmi" data-status="submitted"><div class="paper-labels"><span class="status submitted">在投</span><span class="author-role">第一作者</span></div>
+      <h3 lang="en">AnchorIR: Degradation-Aware Clean-Source Anchoring for Lightweight UAV Image Restoration</h3><p class="paper-translation">AnchorIR：退化感知与干净源锚定的轻量化无人机图像复原</p><p class="authors"><strong>Hangning Zhang</strong>, Haicheng Tu, Mingyue Zhang</p><p class="venue">JMI</p><p class="paper-summary">轻量化一体式图像复原网络，同时关注图像重建保真度，以及复原图像能否从相似参考中正确检索到对应的干净源图像。</p>
+      <details><summary>方法与实验细节</summary><p class="">训练时结合退化分类监督与冻结验证器的源锚定，推理仅保留 2.55M 参数的复原骨干。在 PLAMD 七类退化上，稿件报告平均 PSNR 28.79 dB、Top-1 检索准确率 69.81%；30.9% 的测试源在保真度和检索排序上的变化方向相反，提示应同时评价重建质量与源对应关系。</p></details>
+</article>
+</section>
+
+      <section id="research" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">02</span>研究与工程项目</h2>
+      <article class="project" id="project-radar"><div class="project-top">
+      <h3>低空雷达感知与边缘部署</h3><span class="number">R.01</span></div><p class="project-meta">L-RDTNet · Measurement 在投</p><p class="">围绕低空工业安防与连续监视，将 RD 序列建模为具有距离、多普勒与时间结构的观测，处理杂波、相似运动模式及弱回波目标。</p>
+      <details><summary>方法与参与工作</summary><p class="">工作覆盖表征设计、传统及深度学习基线对比、模块消融、信号退化测试与边缘推理验证；本次介绍采用当前稿件中的 RK3588 片段级部署方案。</p></details>
+<div class="tags"><span>R-D-T</span><span>PyTorch</span><span>RK3588</span></div><a class="project-link" href="#paper-measurement">相关论文 ↗</a></article>
+
+      <article class="project" id="project-ocular"><div class="project-top">
+      <h3>眼表图像与血管风险辅助筛查</h3><span class="number">R.02</span></div><p class="project-meta">ARGL-Net · CMIG 在投 · 相关发明专利已授权</p><p class="">探索便于采集的眼表图像能否提供颈动脉斑块相关线索，参与从数据预处理、模型架构改进到实验分析的完整流程。</p>
+      <details><summary>方法与参与工作</summary><p class="">融合全局外观、局部纹理、注意力精炼与门控融合，开展受试者级结果分析、模块消融、扰动测试和可解释性分析；定位为辅助筛查研究。</p></details>
+<div class="tags"><span>Medical imaging</span><span>Global–local learning</span><span>Attention</span></div><a class="project-link" href="#paper-cmig">相关论文 ↗</a></article>
+
+      <article class="project" id="project-restoration"><div class="project-top">
+      <h3>面向参考匹配的无人机图像复原</h3><span class="number">R.03</span></div><p class="project-meta">AnchorIR · JMI 在投</p><p class="">面向电力巡检图像中的模糊、低照度、雨雾等退化，研究在复原细节的同时保留区分相似金具与正确参考源的能力。</p>
+      <details><summary>方法与参与工作</summary><p class="">引入仅在训练阶段使用的源锚定与退化监督，通过源级分析和对比实验联合评价重建与竞争检索，避免将 PSNR 提升直接等同于参考匹配改善。</p></details>
+<div class="tags"><span>Image restoration</span><span>Source retrieval</span><span>Lightweight models</span></div><a class="project-link" href="#paper-jmi">相关论文 ↗</a></article>
+
+      <article class="project" id="project-agents"><div class="project-top">
+      <h3>证据支撑的农业多智能体诊断</h3><span class="number">R.04</span></div><p class="project-meta">CAS-DC · PRCV 在投</p><p class="">将叶片分类、病斑定位、症状抽取、知识与病例检索连接为证据流程，在生成管理建议前保留支持证据、反例与不确定性。</p>
+      <details><summary>方法与参与工作</summary><p class="">共享黑板流程划分田间分诊、证据分析、鉴别诊断、环境与投入品风险评估、管理规划及安全审校，分别考察感知质量与报告安全性。</p></details>
+<div class="tags"><span>DINOv3</span><span>Qwen3-VL</span><span>RAG</span><span>Multi-agent</span></div><a class="project-link" href="#paper-prcv">相关论文 ↗</a></article>
+
+      <article class="project" id="project-smart-meter"><div class="project-top">
+      <h3>隐私感知与可靠智能电表分析</h3><span class="number">R.05</span></div><p class="project-meta">PA-LPF / FC-PAR · 合作研究</p><p class="">围绕两个互补问题开展合作：从隐私扰动负荷中筛选需求侧柔性资源，以及对隐蔽受损测量进行定位与恢复。</p>
+      <details><summary>方法与参与工作</summary><p class="">PA-LPF 融合扰动嵌入与日聚合描述符；FC-PAR 使用符合时序边界的历史参考和定位引导修复。实验关注隐私—效用权衡、时间信息边界及下游预测恢复。</p></details>
+<div class="tags"><span>Load profiles</span><span>Privacy–utility</span><span>Selective reconstruction</span></div><a class="project-link" href="#paper-trel">相关论文 ↗</a></article>
+
+      <article class="project" id="project-uav"><div class="project-top">
+      <h3>无人机视角小车辆检测</h3><span class="number">R.06</span></div><p class="project-meta">YOLO12 · ICIBA 第一作者录用</p><p class="">针对无人机车辆小目标的像素偏移敏感性与骨干计算冗余，在已录用工作中将 NWD 回归与定点 C3Ghost 改造结合。</p>
+      <details><summary>方法与参与工作</summary><p class="">围绕 EVD4UAV 搭建实验比较，联合观察检测指标、参数量、计算量与时延，使精度收益和部署代价能够同时比较。</p></details>
+<div class="tags"><span>YOLO12</span><span>NWD</span><span>C3Ghost</span></div><a class="project-link" href="#paper-iciba">相关论文 ↗</a></article>
+
+      <article class="project" id="project-robot"><div class="project-top">
+      <h3>球形机器人并行仿真与 PPO 导航</h3><span class="number">R.07</span></div><p class="project-meta">浙江大学科研实习项目 · 指导教师：王酉</p><p class="">基于 Isaac Gym 搭建力矩驱动的球形动力学和点到点闭环导航基线，支持 4 个并行环境、每环境 27 个球体的仿真配置。</p>
+      <details><summary>方法与参与工作</summary><p class="">设计观测空间、奖励函数、成功判定及独立环境复位，使用 MLP 策略完成 PPO 端到端初步训练并贯通推理流程，为后续控制策略比较建立基线。</p></details>
+<div class="tags"><span>Isaac Gym</span><span>PPO</span><span>Torque control</span></div></article>
+
+      <article class="project" id="project-car"><div class="project-top">
+      <h3>高速智能汽车嵌入式视觉与控制</h3><span class="number">R.08</span></div><p class="project-meta">视觉负责人 · 全国一等奖 / 浙江省一等奖</p><p class="">基于 OpenCV 搭建逆透视变换、二值化与边缘检测流水线，设计赛道中线拟合及十字、环岛、坡道等特殊元素识别逻辑。</p>
+      <details><summary>方法与参与工作</summary><p class="">设计视觉与底层控制接口，将视觉偏差通过 PID 转化为舵机转向，结合前瞻预判完成弯道减速与直道加速；团队获全国大学生智能汽车竞赛全国一等奖。</p></details>
+<div class="tags"><span>OpenCV</span><span>C/C++</span><span>PID</span><span>Embedded systems</span></div></article>
+
+      <article class="project" id="project-ominiberry"><div class="project-top">
+      <h3>OminiBerry 草莓病害诊断与决策支持</h3><span class="number">R.09</span></div><p class="project-meta">Web 原型 · 图像分析 / 检索 / 协同推理</p><p class="">面向草莓叶片、花器和果实病害，组织图片上传、视觉摘要、病例与知识检索、专家角色协作及结构化报告生成流程。</p>
+      <details><summary>方法与参与工作</summary><p class="">通过 FastAPI 串联病理推理、鉴别排除、防治建议与栽培管理，保留运行记录、病例沉淀和安全审校信息，使中间证据与输出报告可以追踪。</p></details>
+<div class="tags"><span>FastAPI</span><span>RAG</span><span>Multi-agent</span><span>Ollama</span></div></article>
+
+      <article class="project" id="project-cad"><div class="project-top">
+      <h3>CAD 草图理解与装配约束推断</h3><span class="number">R.10</span></div><p class="project-meta">论文复现与探索性开发</p><p class="">探索让机器理解二维 CAD 草图、识别装配特征并推荐几何约束；比较 DXF 矢量与 PNG 像素输入，并用图结构表达几何拓扑关系。</p>
+      <details><summary>方法与参与工作</summary><p class="">复现 CReFT-CAD，并在与原论文作者沟通后整理可运行代码、依赖和说明文档，为设计辅助研究建立可复现基础。</p></details>
+<div class="tags"><span>GNN</span><span>DXF</span><span>CAD</span><span>Reproducibility</span></div></article>
+</section>
+
+      <section id="innovation" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">03</span>创新项目与软件实践</h2>
+      <article class="project">
+      <h3>“睿动轨迹”——全场景球类智能教练</h3><p class="project-meta">2025 年度国家级大学生创新训练项目 · 负责人</p><p class="">围绕球类运动智能训练辅助开展的大学生创新训练项目。</p></article>
+
+      <article class="project">
+      <h3>“探微青禾”——大模型驱动的多作物无人化监控与多智能体联合决策中枢</h3><p class="project-meta">国家级大学生创新训练项目 · 负责人</p><p class="">围绕多作物监控、大模型推理与多智能体联合决策组织研究及系统实践，项目尚未结项。</p></article>
+
+      <article class="project">
+      <h3>“绿源智汇”——综合能碳管理平台</h3><p class="project-meta">2025 年度省级大学生创新训练项目 · 参与</p><p class="">参与综合能碳管理平台相关创新实践，结合工程分析与应用场景开展项目工作。</p></article>
+
+      <h3 class="group-heading">其他软件设计实践</h3><p class="service">整理 GEO-Matrix 多平台生成式引擎评测平台与 Robust GEO 安全原型图库及内容风控系统的软件设计材料，涉及评测组织、语义检索、规则管理与审计追踪。探索生成式模型评测的可复现流程与内容风险管理。</p></section>
+
+      <section id="patents" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">04</span>专利</h2>
+      <article class="paper"><span class="status accepted">已授权</span>
+      <h3>基于白睛眼象全局局部融合的颈动脉斑块辅助分析方法</h3><p class="">第一发明人 · 专利权人：杭州电子科技大学</p><p class="venue">ZL 2026 1 1210874.9 · CN 122714478 B · 2026-10-20</p></article>
+
+      <article class="paper"><span class="status submitted">申请已公开</span>
+      <h3>基于生理时延先验与可靠度时频互证的运动意图识别方法</h3><p class="">申请号 2026113122550 · 申请已公开，进入实质审查阶段。</p></article>
+</section>
+
+      <section id="education" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">05</span>教育背景</h2><div class="education"><div class="education-top">
+      <h3><a href="https://www.hdu.edu.cn/">杭州电子科技大学</a></h3><span class="date">2024.09—2028.06（预计）</span></div><p class="gpa">自动化 · 本科 · 平均绩点 4.51 / 5.00</p><p class="">大一学年专业综合测评排名第一。</p><p class="">相关课程：自动控制原理、信号与系统、数字电子技术、电机与拖动、C 语言、Python。</p></div></section>
+
+      <section id="honors" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">06</span>荣誉与竞赛</h2><ul class="honors"><li><span>全国大学生智能汽车竞赛 · 全国一等奖</span></li><li><span>浙江省大学生智能汽车竞赛 · 省一等奖</span></li><li><span>浙江省大学生数学建模竞赛 · 省二等奖</span></li><li><span>大学生计算机设计大赛 · 两次省二等奖</span></li><li><span>MathorCup 区域赛 · 三等奖（队长）</span></li><li><span>2024 美珈羽杯杭电数学建模新生赛 · 校一等奖</span></li><li><span>杭电第 26 届大学生数学建模竞赛 · 校二等奖</span></li><li><span>华为 ICT 竞赛 · 省二等奖</span></li><li><span>工业工程与精益管理创新赛 · 省三等奖</span></li><li><span>中国国际大学生创新大赛 · 校赛特等奖</span></li><li><span>“挑战杯”中国大学生创业计划竞赛 · 校赛一等奖</span></li><li><span>校级一等奖学金 4 次 · 省政府奖学金 2 次</span></li><li><span>三好学生 · 优秀学生干部 · 2025 年度自动化学院优秀共青团员</span></li></ul></section>
+
+      <section id="service" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">07</span>学生工作与技能</h2><p class="service">现任数学建模协会秘书处副会长，协助组织校级建模赛事、报名、沟通及参赛支持；大一期间担任自动化六班团支书，组织班级与支部活动。</p><p class="service">领英计划“守正班”、自动化学院第十一届青马雏鹰班成员，参与自动化权益圆桌会等校园活动。</p><div class="skills"><p class="">编程与工程：C/C++、Python、Linux、Git、Keil/STM32。</p><p class="">学习与仿真：PyTorch、OpenCV、Isaac Gym、YOLO、图神经网络、PPO、PID。</p><p class="">认证与语言：华为 HCIA-AI-Solution 工程师认证；CET-4 540 分、CET-6 458 分。</p></div></section>
+
+      <section id="contact" class="contact">
+      <h2>联系我</h2><p class="">欢迎就研究方向、项目合作与学术交流联系我。</p><a href="mailto:24061733@hdu.edu.cn">24061733@hdu.edu.cn</a> · <a href="https://github.com/zhang-hn-1">GitHub ↗</a></section>
+</main>
   </div>
   <footer class="footer"><span>© 2026 张航宁 · <span lang="en">Hangning Zhang</span></span><span><span>学术主页</span> &nbsp; / &nbsp; <a href="#about">返回顶部 ↑</a></span></footer>
 </body>

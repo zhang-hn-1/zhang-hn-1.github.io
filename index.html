@@ -28,90 +28,140 @@
         <a href="mailto:24061733@hdu.edu.cn"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="m3 5 7 6 7-6"/></svg><span data-zh="邮箱">Email</span></a>
         <a href="https://github.com/zhang-hn-1" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 17v-3c-4 1-4-2-5-2m11 5v-3c0-1-.4-1.6-1-2 3-.3 5-1.5 5-5 0-1-.4-2-1-2.5.2-.7.2-1.5-.2-2.5-1.5 0-2.5.7-3 1a12 12 0 0 0-5.6 0c-.5-.3-1.5-1-3-1-.4 1-.4 1.8-.2 2.5C3.4 5 3 6 3 7c0 3.5 2 4.7 5 5-.6.4-1 1-1 2"/></svg>GitHub</a>
       </div>
-      <nav class="side-nav" aria-label="Sections">
-        <a href="#about" aria-current="location" data-zh="个人简介">About</a>
-        <a href="#research" data-zh="研究与项目">Research & projects</a>
-        <a href="#publications" data-zh="论文进展">Manuscripts</a>
-        <a href="#education" data-zh="教育背景">Education</a>
-        <a href="#honors" data-zh="荣誉奖项">Honors & awards</a>
-        <a href="#service" data-zh="服务与技能">Service & skills</a>
-        <a href="#contact" data-zh="联系我">Contact</a>
-      </nav>
+      <nav class="side-nav" aria-label="Sections"><a href="#about">About</a><a href="#publications">Papers &amp; manuscripts</a><a href="#research">Research &amp; projects</a><a href="#innovation">Innovation projects</a><a href="#patents">Patents</a><a href="#education">Education</a><a href="#honors">Honors &amp; awards</a><a href="#service">Service &amp; skills</a><a href="#contact">Contact</a></nav>
       <p class="sidebar-foot" data-zh="感知 · 学习 · 控制">Perception · Learning · Control</p>
     </aside>
     <main id="main">
-      <section id="about" class="hero" aria-labelledby="name">
-        <p class="eyebrow" data-zh="杭州电子科技大学 · 自动化">Hangzhou Dianzi University · Automation</p>
-        <h1 id="name">Hangning Zhang <span class="chinese-name" lang="zh-CN">张航宁</span></h1>
-        <p class="subtitle" data-zh="自动化专业本科生 · 2024—2028（预计）">B.Eng. student in Automation · 2024–2028 (expected)</p>
-        <p class="intro" data-zh="你好！我是张航宁，现就读于杭州电子科技大学自动化专业。我的研究兴趣包括计算机视觉、雷达感知与机器人学习，希望通过感知与学习方法，让智能系统更好地理解环境并完成控制任务。">I am an undergraduate student in <strong>Automation</strong> at <a href="https://www.hdu.edu.cn/" target="_blank" rel="noopener noreferrer">Hangzhou Dianzi University</a>. My interests lie in computer vision, radar perception and robot learning, with a focus on connecting perception and learning to intelligent control.</p>
-        <p class="intro" data-zh="目前的研究与项目经历涵盖低空雷达目标识别、多模态医学图像分析和球形机器人强化学习。我也曾担任全国大学生智能汽车竞赛团队的视觉负责人，参与嵌入式视觉感知与车辆控制系统开发，团队获得全国一等奖。">My research and project experience spans low-altitude radar target recognition, multimodal medical image analysis and reinforcement learning for spherical robots. I also led the vision work in a team that received a <strong>National First Prize</strong> in the National University Student Smart Car Competition.</p>
-        <p class="interest-label" data-zh="研究兴趣">RESEARCH INTERESTS</p>
-        <div class="interests"><span data-zh="计算机视觉">Computer vision</span><span data-zh="雷达感知">Radar perception</span><span data-zh="机器人学习">Robot learning</span><span data-zh="医学图像分析">Medical image analysis</span></div>
-      </section>
+      <section id="about" class="hero"><p class="eyebrow">HANGZHOU DIANZI UNIVERSITY · AUTOMATION</p><h1 id="name">Hangning Zhang <span class="chinese-name" lang="zh-CN">张航宁</span></h1><p class="subtitle">B.Eng. student · 2024–2028 (expected)</p><p class="intro">I am an Automation undergraduate at Hangzhou Dianzi University. My work connects visual perception, structured representation learning and intelligent decision-making, with projects in medical imaging, UAV inspection, radar sensing, agricultural diagnosis and robot learning.</p><p class="intro">I lead two national undergraduate innovation training projects and have served as the vision lead of a national first-prize smart car team. I am interested in building models and systems whose evidence, robustness and deployment costs can be examined together.</p><div class="snapshot"><div><strong>2</strong><span>Accepted papers</span></div><div><strong>5</strong><span>Submitted papers</span></div><div><strong>2</strong><span>National projects led</span></div><div><strong>1</strong><span>Granted invention patent</span></div></div><div class="interests"><span>Visual perception</span><span>Medical imaging</span><span>Multi-agent reasoning</span><span>Robot learning</span><span>Reliable sensing</span></div><p class="updated">Updated 7 November 2026</p></section>
 
-      <section id="research" class="content-section" aria-labelledby="research-heading">
-        <h2 id="research-heading"><span class="section-index" aria-hidden="true">01</span><span data-zh="研究与项目">Research & projects</span></h2>
-        <article class="project">
-          <div class="project-top"><h3 data-zh="L-RDTNet：低空雷达目标识别">L-RDTNet: Low-altitude radar target recognition</h3><span class="number" aria-hidden="true">R.01</span></div>
-          <p class="project-meta" data-zh="指导教师：涂海程副教授 · 雷达感知 / 边缘智能">Advisor: Assoc. Prof. Haicheng Tu · Radar perception / Edge intelligence</p>
-          <p data-zh="基于距离–多普勒–时间（R-D-T）结构化表征，研究低空目标识别方法，关注弱回波、杂波干扰及相似运动模式下的分类问题。完成与手工特征、CNN、3D CNN 和 Transformer 类基线的对比及消融实验，并在 Jetson 平台进行推理验证。">Investigating radar target recognition with structured range–Doppler–time (R-D-T) representations, focusing on weak echoes, clutter and similar motion patterns. Conducted comparisons and ablations against handcrafted features, CNNs, 3D CNNs and Transformer-based baselines, with inference evaluation on Jetson.</p>
-          <p class="result" data-zh="项目实验：准确率 95.06% · Macro-F1 95.04% · 8.37M 参数 · Jetson 103.41 FPS">Project evaluation: 95.06% accuracy · 95.04% Macro-F1 · 8.37M parameters · 103.41 FPS on Jetson</p>
-          <div class="tags"><span>Radar</span><span>R-D-T</span><span>PyTorch</span><span>Jetson</span></div>
-        </article>
-        <article class="project">
-          <div class="project-top"><h3 data-zh="多模态深度学习：白睛眼像与颈动脉斑块">Multimodal learning for scleral images and carotid plaque</h3><span class="number" aria-hidden="true">R.02</span></div>
-          <p class="project-meta" data-zh="指导教师：曹九稳教授 · 医学图像分析">Advisor: Prof. Jiuwen Cao · Medical image analysis</p>
-          <p data-zh="探索利用非侵入式白睛眼像预测颈动脉斑块风险，参与从数据预处理到模型架构改进的完整流程。通过多组消融实验评估模型模块，研究眼部特征与颈动脉斑块之间的潜在关联。">Exploring non-invasive scleral imaging for carotid plaque risk prediction. My work covers data preprocessing and model architecture improvements, with ablation studies to evaluate model components and investigate potential associations between ocular features and carotid plaque.</p>
-          <div class="tags"><span data-zh="多模态学习">Multimodal learning</span><span data-zh="医学影像">Medical imaging</span><span>PyTorch</span></div>
-        </article>
-        <article class="project">
-          <div class="project-top"><h3 data-zh="球形机器人导航与 PPO 端到端训练">Spherical robot navigation with PPO</h3><span class="number" aria-hidden="true">R.03</span></div>
-          <p class="project-meta" data-zh="浙江大学科研实习项目 · 指导教师：王酉教授">Research internship project at Zhejiang University · Advisor: Prof. You Wang</p>
-          <p data-zh="基于 Isaac Gym 搭建并行物理仿真环境，完成球体动力学建模、力矩控制和点到点闭环导航基线。设计强化学习观测空间、奖励函数、成功判定和独立复位逻辑，完成 MLP 策略的 PPO 端到端初步训练，验证训练与推理流程。">Built parallel physics simulations in Isaac Gym, including spherical dynamics, torque control and a point-to-point closed-loop navigation baseline. Designed observations, rewards, success criteria and independent resets, then ran initial end-to-end PPO training with an MLP policy to validate the training and inference pipeline.</p>
-          <p class="result" data-zh="仿真规模：4 个并行环境 × 每环境 27 个球体">Simulation setup: 4 parallel environments × 27 spheres per environment</p>
-          <div class="tags"><span>Isaac Gym</span><span>PPO</span><span data-zh="强化学习">Reinforcement learning</span></div>
-        </article>
-        <article class="project">
-          <div class="project-top"><h3 data-zh="智能汽车：嵌入式视觉与自主控制">Smart car: Embedded vision and autonomous control</h3><span class="number" aria-hidden="true">R.04</span></div>
-          <p class="project-meta" data-zh="视觉负责人 · 指导教师：余善恩老师">Vision lead · Advisor: Shanen Yu</p>
-          <p data-zh="设计并部署基于嵌入式平台的高速自动驾驶视觉感知系统，参与复杂赛道识别与车辆控制。团队获得全国大学生智能汽车竞赛全国一等奖。">Designed and deployed an embedded vision perception system for high-speed autonomous driving, contributing to complex track recognition and vehicle control. The team received a National First Prize in the National University Student Smart Car Competition.</p>
-          <div class="tags"><span>OpenCV</span><span>C/C++</span><span>PID</span><span data-zh="嵌入式视觉">Embedded vision</span></div>
-        </article>
-      </section>
+      <section id="publications" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">01</span>Papers &amp; manuscripts</h2><p class="section-note">Accepted papers and ongoing submissions. Expand each entry for methods and study details.</p>
+      <h3 class="group-heading">Accepted papers</h3>
+      <article class="paper expanded-paper" id="paper-iciba" data-status="accepted"><div class="paper-labels"><span class="status accepted">Accepted</span><span class="author-role">First author</span></div>
+      <h3 lang="en">Robust and Lightweight YOLO12-Based Framework for Small Vehicle Detection</h3><p class="authors"><strong>Hangning Zhang</strong>, Yingjun Guan, Haicheng Tu</p><p class="venue">ICIBA 2026</p><p class="paper-summary">A UAV vehicle detector that combines robust small-object localization with targeted backbone simplification. The study focuses on the trade-off between localization stability and deployment cost in aerial imagery.</p>
+      <details><summary>Method & study details</summary><p class="">Introduces Normalized Wasserstein Distance (NWD) into bounding-box regression and replaces the deepest A2C2f block with C3Ghost. Experiments on EVD4UAV compare detection quality, parameter count, computation and inference latency. Accepted by the 2026 IEEE 5th International Conference on Information Technology, Big Data and Artificial Intelligence.</p></details>
+</article>
 
-      <section id="publications" class="content-section" aria-labelledby="publications-heading">
-        <h2 id="publications-heading"><span class="section-index" aria-hidden="true">02</span><span data-zh="论文进展">Manuscripts</span></h2>
-        <p class="section-note" data-zh="以下为尚未发表的研究工作。完整题录及公开链接将在可用时更新。">The following work is not yet published. Full bibliographic details and public links will be added when available.</p>
-        <article class="paper"><h3 data-zh="L-RDTNet 低空雷达目标识别研究">L-RDTNet: Research on low-altitude radar target recognition</h3><p><span class="status" data-zh="在投">Under submission</span><span>IEEE Transactions on Industrial Informatics</span></p></article>
-        <article class="paper"><h3 data-zh="基于多模态深度学习的白睛眼像与颈动脉斑块相关性研究">Multimodal deep learning for scleral images and carotid plaque associations</h3><p><span class="status" data-zh="研究进行中">Research in progress</span><span data-zh="医学图像分析">Medical image analysis</span></p></article>
-      </section>
+      <article class="paper expanded-paper" id="paper-itoec" data-status="accepted"><div class="paper-labels"><span class="status accepted">Accepted</span><span class="author-role">Third author</span></div>
+      <h3 lang="en">Weakly Supervised Privacy-Aware Load Profile Matching for Flexible Resource Screening in Smart Grids</h3><p class="authors">Mingyue Zhang, Haicheng Tu, <strong>Hangning Zhang</strong>, Yibo Zhu, Xinghua Zhou</p><p class="venue">ITOEC 2026</p><p class="paper-summary">PA-LPF combines perturbed load-shape embeddings with compact daily aggregate descriptors to support privacy-aware screening of flexible demand-side resources.</p>
+      <details><summary>Method & study details</summary><p class="">Under a strict no-label-rule validation protocol, the manuscript reports approximately 0.927 AUC and 0.812 F1. Ablation and robustness experiments examine privacy budgets, temporal masking and cross-group evaluation. Accepted by the 2026 IEEE 9th Information Technology and Mechatronics Engineering Conference.</p></details>
+</article>
 
-      <section id="education" class="content-section" aria-labelledby="education-heading">
-        <h2 id="education-heading"><span class="section-index" aria-hidden="true">03</span><span data-zh="教育背景">Education</span></h2>
-        <div class="education"><div class="education-top"><h3><a href="https://www.hdu.edu.cn/" target="_blank" rel="noopener noreferrer" data-zh="杭州电子科技大学">Hangzhou Dianzi University</a></h3><span class="date" data-zh="2024.09—2028.06（预计）">Sep. 2024 – Jun. 2028 (expected)</span></div><p data-zh="自动化 · 本科">B.Eng. in Automation</p><p class="gpa">GPA: 4.51 / 5.00</p><p data-zh="相关课程：C 语言程序设计、Python、自动控制原理。">Selected coursework: C Programming, Python, Principles of Automatic Control.</p></div>
-      </section>
+      <h3 class="group-heading">Submitted manuscripts</h3>
+      <article class="paper expanded-paper" id="paper-prcv" data-status="submitted"><div class="paper-labels"><span class="status submitted">Submitted</span><span class="author-role">Second author</span></div>
+      <h3 lang="en">CAS-DC: Evidence-Grounded Multimodal Multi-Agent Diagnosis and Safe Report Generation for Tomato Leaf Disease</h3><p class="venue">PRCV</p><p class="paper-summary">An evidence-grounded workflow that turns images and optional field context into structured symptoms, retrieved evidence, differential reasoning and safety-reviewed diagnostic reports.</p>
+      <details><summary>Method & study details</summary><p class="">Combines DINOv3-based classification and segmentation, Qwen3-VL symptom extraction, knowledge/case/counter-case retrieval and shared-blackboard collaboration. The manuscript reports 97.65% classification accuracy and 97.83% macro-F1; these classification metrics are distinct from the safety evaluation of generated reports.</p></details>
+</article>
 
-      <section id="honors" class="content-section" aria-labelledby="honors-heading">
-        <h2 id="honors-heading"><span class="section-index" aria-hidden="true">04</span><span data-zh="荣誉奖项">Honors & awards</span></h2>
-        <ul class="honors">
-          <li><span data-zh="全国一等奖 · 全国大学生智能汽车竞赛"><strong>National First Prize</strong> · National University Student Smart Car Competition</span></li>
-          <li><span data-zh="浙江省二等奖 · 浙江省大学生数学建模竞赛"><strong>Provincial Second Prize</strong> · Zhejiang Mathematical Modeling Competition</span></li>
-          <li><span data-zh="省级二等奖 · 大学生计算机设计大赛"><strong>Provincial Second Prize</strong> · Computer Design Competition</span></li>
-          <li><span data-zh="国家级大学生创新训练项目负责人">Project leader · National Undergraduate Innovation Training Program</span></li>
-          <li><span data-zh="省政府奖学金（1 次） · 校级一等奖学金（3 次）">Provincial Government Scholarship (once) · University First-Class Scholarship (three times)</span></li>
-          <li><span data-zh="校级三好学生 · 自动化学院优秀共青团员（2025）">University Merit Student · Outstanding Youth League Member, School of Automation (2025)</span></li>
-        </ul>
-      </section>
+      <article class="paper expanded-paper" id="paper-cmig" data-status="submitted"><div class="paper-labels"><span class="status submitted">Submitted</span><span class="author-role">First author</span></div>
+      <h3 lang="en">Context-Preserved Attention-Refined Global–Local Learning for Ocular Surface Image-Based Carotid Plaque Screening</h3><p class="authors"><strong>Hangning Zhang</strong>, Dinghan Hu, Shichen Zhang, Le Luo, Jiuwen Cao</p><p class="venue">Computerized Medical Imaging and Graphics (CMIG)</p><p class="paper-summary">ARGL-Net explores ocular surface cues associated with ultrasound-defined carotid plaque through complementary global context, local detail and attention-refined feature fusion.</p>
+      <details><summary>Method & study details</summary><p class="">The study uses 44,375 left-eye images and subject-level evaluation. A ResNet-based global branch, a lightweight detail branch, attention refinement and gated fusion yield a reported AUC of 80.74%, Macro-F1 of 78.50% and accuracy of 80.00%. Comparative, ablation, perturbation and visualization analyses support the study; external validation is still needed before clinical use.</p></details>
+</article>
 
-      <section id="service" class="content-section" aria-labelledby="service-heading">
-        <h2 id="service-heading"><span class="section-index" aria-hidden="true">05</span><span data-zh="服务与技能">Service & skills</span></h2>
-        <div class="service"><p data-zh="数学建模协会副会长：协助组织校级数学建模赛事，参与赛事沟通、报名与支持工作。"><strong>Vice President, Mathematical Modeling Association.</strong> Supported the organization of university modeling competitions, including communication, registration and event logistics.</p><p data-zh="自动化六班团支书：组织班级与支部活动，参与领英计划“守正班”。"><strong>Class Youth League Secretary, Automation Class 6.</strong> Organized class and branch activities; participated in the “Shouzheng” cohort of the Lingying Program.</p></div>
-        <div class="skills"><div><strong data-zh="编程语言：">Programming: </strong>C / C++ · Python</div><div><strong data-zh="方法与工具：">Methods & tools: </strong>PyTorch · OpenCV · YOLO · ResNet · GNN · PID</div><div><strong data-zh="认证：">Certification: </strong><span data-zh="华为 HCIA-AI-Solution 工程师认证">Huawei HCIA-AI-Solution</span></div></div>
-      </section>
+      <article class="paper expanded-paper" id="paper-measurement" data-status="submitted"><div class="paper-labels"><span class="status submitted">Submitted</span><span class="author-role">First author</span></div>
+      <h3 lang="en">Edge-Deployable Range-Doppler-Time Learning for Industrial Low-Altitude Radar Target Recognition</h3><p class="venue">Measurement</p><p class="paper-summary">L-RDTNet learns radar-specific spatial and temporal representations from range–Doppler sequences for low-altitude recognition under clutter, weak returns and signal degradation.</p>
+      <details><summary>Method & study details</summary><p class="">The model progressively encodes coarse energy responses, local range–Doppler textures, short-term motion and compact target-level features. The manuscript compares conventional methods, CNNs, 3D CNNs and Transformers, tests SNR degradation and weak-target attenuation, and evaluates clip-level inference on RK3588.</p></details>
+</article>
 
-      <section id="contact" class="contact" aria-labelledby="contact-heading"><h2 id="contact-heading" data-zh="联系我">Get in touch</h2><p data-zh="欢迎就研究兴趣、项目与学术交流联系我。">For research discussions, project inquiries and academic exchange.</p><a href="mailto:24061733@hdu.edu.cn">24061733@hdu.edu.cn</a><span aria-hidden="true"> &nbsp;·&nbsp; </span><a href="https://github.com/zhang-hn-1" target="_blank" rel="noopener noreferrer">GitHub ↗</a></section>
-    </main>
+      <article class="paper expanded-paper" id="paper-trel" data-status="submitted"><div class="paper-labels"><span class="status submitted">Submitted</span><span class="author-role">Third author overall · second student author</span></div>
+      <h3 lang="en">Chronology-Constrained Reference-Guided Reconstruction of Stealthily Corrupted Smart-Meter Measurements</h3><p class="authors">Mingyue Zhang, Haicheng Tu, <strong>Hangning Zhang</strong>, Zhiyuan Hu, Yuyuan Li, Yongxiang Xia, Xi Chen</p><p class="venue">TREL</p><p class="paper-summary">FC-PAR connects interval-level corruption localization with selective reconstruction, aiming to restore usable measurements while preserving unaffected intervals.</p>
+      <details><summary>Method & study details</summary><p class="">Constructs mean, history-attention and similar-day references only from eligible preceding household records. Localization probabilities gate additive corrections; a preservation objective controls clean-measurement drift. Evaluation on Low Carbon London considers localization, reconstruction and recovery of downstream forecasting without oracle masks or future information.</p></details>
+</article>
+
+      <article class="paper expanded-paper" id="paper-jmi" data-status="submitted"><div class="paper-labels"><span class="status submitted">Submitted</span><span class="author-role">First author</span></div>
+      <h3 lang="en">AnchorIR: Degradation-Aware Clean-Source Anchoring for Lightweight UAV Image Restoration</h3><p class="authors"><strong>Hangning Zhang</strong>, Haicheng Tu, Mingyue Zhang</p><p class="venue">JMI</p><p class="paper-summary">A lightweight all-in-one restoration network that evaluates both image reconstruction fidelity and whether a restored UAV observation retrieves its correct clean reference.</p>
+      <details><summary>Method & study details</summary><p class="">Combines training-only degradation classification and frozen-verifier anchoring, retaining a 2.55M-parameter backbone at inference. Across seven PLAMD degradation types, the manuscript reports 28.79 dB mean PSNR and 69.81% Top-1 retrieval. Source-level analysis finds opposing changes in fidelity and retrieval rank for 30.9% of test sources, motivating evaluation beyond reconstruction averages.</p></details>
+</article>
+</section>
+
+      <section id="research" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">02</span>Research &amp; engineering projects</h2>
+      <article class="project" id="project-radar"><div class="project-top">
+      <h3>Radar perception &amp; edge deployment</h3><span class="number">R.01</span></div><p class="project-meta">L-RDTNet · Measurement submission</p><p class="">Develop radar-specific representations rather than treating every range–Doppler frame as an independent natural image. Investigate clutter, similar motion patterns and weak returns through structured R-D-T learning.</p>
+      <details><summary>Approach & work</summary><p class="">Work spans representation design, conventional and deep-learning baselines, ablations, degradation tests and edge inference. The current manuscript evaluates RK3588 clip-level deployment; platform-specific measurements are kept separate from earlier prototypes.</p></details>
+<div class="tags"><span>R-D-T</span><span>PyTorch</span><span>RK3588</span></div><a class="project-link" href="#paper-measurement">Related manuscript ↗</a></article>
+
+      <article class="project" id="project-ocular"><div class="project-top">
+      <h3>Ocular imaging for auxiliary vascular screening</h3><span class="number">R.02</span></div><p class="project-meta">ARGL-Net · CMIG submission · granted invention patent</p><p class="">Explore whether readily acquired ocular surface images contain cues associated with carotid plaque. My work covers preprocessing, model architecture improvements and experimental analysis.</p>
+      <details><summary>Approach & work</summary><p class="">Combine global appearance and local texture with attention refinement and gated fusion. Examine subject-level results, module contributions and sensitivity to image perturbations; treat the model as research on auxiliary screening.</p></details>
+<div class="tags"><span>Medical imaging</span><span>Global–local learning</span><span>Attention</span></div><a class="project-link" href="#paper-cmig">Related manuscript ↗</a></article>
+
+      <article class="project" id="project-restoration"><div class="project-top">
+      <h3>Task-aware UAV image restoration</h3><span class="number">R.03</span></div><p class="project-meta">AnchorIR · JMI submission</p><p class="">Study restoration for power-line inspection where visually similar fittings must still be matched to their correct clean reference after degradation.</p>
+      <details><summary>Approach & work</summary><p class="">Use training-only source anchoring and degradation supervision; compare reconstruction and competitive retrieval rather than inferring retrieval quality from PSNR alone.</p></details>
+<div class="tags"><span>Image restoration</span><span>Source retrieval</span><span>Lightweight models</span></div><a class="project-link" href="#paper-jmi">Related manuscript ↗</a></article>
+
+      <article class="project" id="project-agents"><div class="project-top">
+      <h3>Evidence-grounded agricultural diagnosis</h3><span class="number">R.04</span></div><p class="project-meta">CAS-DC · PRCV submission</p><p class="">Connect visual perception to structured reasoning: classify leaves, locate lesions, extract symptoms and retrieve supporting and contrasting evidence before forming management suggestions.</p>
+      <details><summary>Approach & work</summary><p class="">A shared-blackboard workflow separates triage, evidence analysis, differential diagnosis, environmental/input-risk assessment, planning and safety review. Perception quality and report safety are evaluated as different outcomes.</p></details>
+<div class="tags"><span>DINOv3</span><span>Qwen3-VL</span><span>RAG</span><span>Multi-agent</span></div><a class="project-link" href="#paper-prcv">Related manuscript ↗</a></article>
+
+      <article class="project" id="project-smart-meter"><div class="project-top">
+      <h3>Privacy-aware and reliable smart-meter analytics</h3><span class="number">R.05</span></div><p class="project-meta">PA-LPF / FC-PAR · collaborative research</p><p class="">Study two complementary problems: screening flexible demand-side resources from privacy-perturbed profiles, and recovering measurement records after stealthy corruption.</p>
+      <details><summary>Approach & work</summary><p class="">PA-LPF fuses perturbed embeddings with daily aggregate descriptors. FC-PAR uses chronology-constrained references and localization-guided repair. Evaluation considers privacy–utility, temporal boundaries and downstream forecast recovery.</p></details>
+<div class="tags"><span>Load profiles</span><span>Privacy–utility</span><span>Selective reconstruction</span></div><a class="project-link" href="#paper-trel">Related manuscript ↗</a></article>
+
+      <article class="project" id="project-uav"><div class="project-top">
+      <h3>Robust small-vehicle detection in UAV imagery</h3><span class="number">R.06</span></div><p class="project-meta">YOLO12 · first-author ICIBA acceptance</p><p class="">Investigate sensitivity to small bounding-box shifts and computational redundancy in aerial vehicle detection. The accepted work combines NWD regression with a focused C3Ghost modification.</p>
+      <details><summary>Approach & work</summary><p class="">Experimental tooling compares detection metrics with parameter count, computation and latency on EVD4UAV, making the accuracy–efficiency trade-off explicit.</p></details>
+<div class="tags"><span>YOLO12</span><span>NWD</span><span>C3Ghost</span></div><a class="project-link" href="#paper-iciba">Related manuscript ↗</a></article>
+
+      <article class="project" id="project-robot"><div class="project-top">
+      <h3>Spherical robot simulation &amp; PPO navigation</h3><span class="number">R.07</span></div><p class="project-meta">Zhejiang University research internship project · advisor: You Wang</p><p class="">Build torque-driven spherical dynamics and a point-to-point closed-loop navigation baseline in Isaac Gym, supporting four parallel environments with 27 spheres per environment.</p>
+      <details><summary>Approach & work</summary><p class="">Implement observations, rewards, success criteria and independent resets. Complete initial end-to-end PPO training with an MLP policy and connect training to inference as a baseline for subsequent policy comparisons.</p></details>
+<div class="tags"><span>Isaac Gym</span><span>PPO</span><span>Torque control</span></div></article>
+
+      <article class="project" id="project-car"><div class="project-top">
+      <h3>High-speed embedded vision &amp; vehicle control</h3><span class="number">R.08</span></div><p class="project-meta">Vision lead · national and provincial first prizes</p><p class="">Develop an OpenCV preprocessing pipeline with inverse perspective mapping, thresholding and edge detection. Design centerline fitting and recognition logic for intersections, roundabouts and ramps.</p>
+      <details><summary>Approach & work</summary><p class="">Connect visual deviation to steering through a PID interface, with look-ahead strategies for corner deceleration and straight-line acceleration. The team received a National First Prize in the smart car competition.</p></details>
+<div class="tags"><span>OpenCV</span><span>C/C++</span><span>PID</span><span>Embedded systems</span></div></article>
+
+      <article class="project" id="project-ominiberry"><div class="project-top">
+      <h3>OminiBerry: Strawberry disease decision support</h3><span class="number">R.09</span></div><p class="project-meta">Web prototype · image analysis / retrieval / collaborative reasoning</p><p class="">Develop a workflow covering image upload, visual summaries, case and knowledge retrieval, expert-role collaboration and structured diagnostic reports for strawberry leaves, flowers and fruit.</p>
+      <details><summary>Approach & work</summary><p class="">A FastAPI service links pathology reasoning, differential exclusion, treatment suggestions and cultivation management. Run records, case curation and safety review make intermediate evidence and reports traceable.</p></details>
+<div class="tags"><span>FastAPI</span><span>RAG</span><span>Multi-agent</span><span>Ollama</span></div></article>
+
+      <article class="project" id="project-cad"><div class="project-top">
+      <h3>CAD sketch understanding &amp; constraint inference</h3><span class="number">R.10</span></div><p class="project-meta">Research reproduction and exploratory development</p><p class="">Explore machine understanding of 2D CAD sketches for assembly-feature recognition and geometric constraint recommendation. Compare DXF vector inputs and PNG raster inputs, with graph representations of geometric topology.</p>
+      <details><summary>Approach & work</summary><p class="">Reproduce CReFT-CAD and organize runnable code, dependencies and documentation following communication with the original authors. This work emphasizes reproducibility and representation learning for design assistance.</p></details>
+<div class="tags"><span>GNN</span><span>DXF</span><span>CAD</span><span>Reproducibility</span></div></article>
+</section>
+
+      <section id="innovation" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">03</span>Innovation &amp; software practice</h2>
+      <article class="project">
+      <h3>Intelligent Coach for All-Scenario Ball Sports</h3><p class="project-meta">National undergraduate innovation training project · project leader · 2025</p><p class="">An undergraduate innovation project centered on intelligent assistance for ball-sport training.</p></article>
+
+      <article class="project">
+      <h3>Multi-Crop Monitoring &amp; Multi-Agent Decision Hub</h3><p class="project-meta">National undergraduate innovation training project · project leader</p><p class="">A project linking crop monitoring with large-model and multi-agent decision support; the project has not yet reached final completion.</p></article>
+
+      <article class="project">
+      <h3>Integrated Energy &amp; Carbon Management Platform</h3><p class="project-meta">Provincial undergraduate innovation training project · participation · 2025</p><p class="">Project participation in integrated energy and carbon management, connecting engineering analysis with application-oriented innovation.</p></article>
+
+      <h3 class="group-heading">Additional software design practice</h3><p class="service">Prepared software design documentation for GEO-Matrix, a multi-platform generative-engine evaluation platform, and Robust GEO, a safety-prototype and content-risk system. The designs explore semantic retrieval, rule management and auditability in model evaluation and content-risk workflows.</p></section>
+
+      <section id="patents" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">04</span>Patents</h2>
+      <article class="paper"><span class="status accepted">Granted</span>
+      <h3>Global–local ocular image fusion for auxiliary carotid plaque analysis</h3><p class="">First inventor · Patent holder: Hangzhou Dianzi University</p><p class="venue">ZL 2026 1 1210874.9 · CN 122714478 B · 2026-10-20</p></article>
+
+      <article class="paper"><span class="status submitted">Application published</span>
+      <h3>Motion-intention recognition using physiological delay priors and reliability-based time–frequency corroboration</h3><p class="">Application 2026113122550 · published application, in substantive examination.</p></article>
+</section>
+
+      <section id="education" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">05</span>Education</h2><div class="education"><div class="education-top">
+      <h3><a href="https://www.hdu.edu.cn/">Hangzhou Dianzi University</a></h3><span class="date">Sep. 2024 – Jun. 2028 (expected)</span></div><p class="gpa">B.Eng. in Automation · GPA 4.51 / 5.00</p><p class="">Ranked first in the first-year comprehensive evaluation within the major.</p><p class="">Coursework: Automatic Control, Signals and Systems, Digital Electronics, Electric Machines and Drives, C Programming, Python.</p></div></section>
+
+      <section id="honors" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">06</span>Selected honors &amp; awards</h2><ul class="honors"><li><span>National First Prize · National University Student Smart Car Competition</span></li><li><span>Provincial First Prize · Zhejiang Smart Car Competition</span></li><li><span>Provincial Second Prize · Zhejiang Mathematical Modeling Competition</span></li><li><span>Provincial Second Prize, twice · Computer Design Competition</span></li><li><span>Regional Third Prize · MathorCup (team leader)</span></li><li><span>University First Prize · 2024 HDU Freshman Mathematical Modeling Competition</span></li><li><span>University Second Prize · 26th HDU Mathematical Modeling Competition</span></li><li><span>Provincial Second Prize · Huawei ICT Competition</span></li><li><span>Provincial Third Prize · Industrial Engineering &amp; Lean Management Innovation Competition</span></li><li><span>University Special Prize · China International College Students’ Innovation Competition</span></li><li><span>University First Prize · Challenge Cup Entrepreneurship Competition</span></li><li><span>University First-Class Scholarship ×4 · Provincial Government Scholarship ×2</span></li><li><span>University Merit Student · Outstanding Student Leader · Outstanding Youth League Member (2025)</span></li></ul></section>
+
+      <section id="service" class="content-section">
+      <h2><span class="section-index" aria-hidden="true">07</span>Service &amp; skills</h2><p class="service">Vice President (Secretariat), Mathematical Modeling Association: support competition organization, registration, communication and participant services. Previously served as Youth League Secretary of Automation Class 6, organizing class and branch activities.</p><p class="service">Member of the Lingying “Shouzheng” cohort and the School of Automation’s 11th Qingma “Young Eagle” program; participated in the Automation rights roundtable.</p><div class="skills"><p class="">Programming &amp; engineering: C/C++, Python, Linux, Git, Keil/STM32.</p><p class="">Learning &amp; simulation: PyTorch, OpenCV, Isaac Gym, YOLO, graph neural networks, PPO, PID.</p><p class="">Certification &amp; language: Huawei HCIA-AI-Solution; CET-4 540, CET-6 458.</p></div></section>
+
+      <section id="contact" class="contact">
+      <h2>Get in touch</h2><p class="">For research discussions, project collaboration and academic exchange.</p><a href="mailto:24061733@hdu.edu.cn">24061733@hdu.edu.cn</a> · <a href="https://github.com/zhang-hn-1">GitHub ↗</a></section>
+</main>
   </div>
   <footer class="footer"><span>© 2026 Hangning Zhang · <span lang="zh-CN">张航宁</span></span><span><span data-zh="学术主页">Academic homepage</span> &nbsp; / &nbsp; <a href="#about" data-zh="返回顶部 ↑">Back to top ↑</a></span></footer>
 </body>
